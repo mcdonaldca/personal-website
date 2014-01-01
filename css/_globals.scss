@@ -13,6 +13,10 @@ html, body {
 	height: 100%;
 	background: $yellow;
 	color: $grey;
+
+	@media screen and (max-width: 800px) {
+		font-size: .9em;
+	}
 }
 
 a {
@@ -21,7 +25,7 @@ a {
 }
 
 .container {
-	width: 95%;
+	width: 90%;
 	max-width: 900px;
 	margin: 0 auto;
 }
@@ -60,18 +64,38 @@ h2 {
 	color: $grey;
 	font: 2.5em "Concert One";
 	padding: 10px 0;
+	line-height: .9em;
 
 	&#uni {
 		float: left;
+
+		@media screen and (max-width: 600px) {
+				float: none;
+				padding: 10px 0 0 0;
+		}
 	}
 
 	&#GPA {
 		float: right;
+
+		@media screen and (max-width: 600px) {
+				float: none;
+		}
 	}
 
 	span {
 		font: .5em Dosis;
+
+		br {
+			display: none;
+
+			@media screen and (max-width: 600px) {
+				display: inline;
+			}
+		}
 	}
+
+
 }
 
 .location {
@@ -79,6 +103,10 @@ h2 {
 	clear: left;
 	margin-top: 1em;
 	width: 8.5em;
+
+	@media screen and (max-width: 600px) {
+		display: none;
+	}
 }
 
 h3 {
@@ -88,6 +116,14 @@ h3 {
 	&#edu-info {
 		margin-top: 3em;
 		padding-bottom: 0;
+
+		@media screen and (max-width: 600px) {
+			margin: 0;
+		}	
+	}
+
+	@media screen and (max-width: 600px) {
+		padding: 0;
 	}
 }
 
@@ -96,6 +132,11 @@ p {
 	letter-spacing: .03125em;
 	padding: 10px 0 10px 2.222em;
 	width: 70%;
+
+	@media screen and (max-width: 600px) {
+		width: 100%;
+		padding: 10px 0;
+	}
 }
 
 .me {
@@ -114,9 +155,15 @@ header {
 	background: $purple;
 
 	.logo {
-		height: 3.125em;
+		width: 8.2022em;
 		padding: 1.25em 0;
 		float: left;
+
+		@media screen and (max-width: 450px) {
+			float: none;
+			width: 8.2022em;
+			margin: 0 auto;
+		}
 	}
 
 	ul {
@@ -124,17 +171,26 @@ header {
 		list-style: none;
 		padding: 1.25em 0 0 0;
 
+		text-align: center;
+		color: $yellow;
+		font: .75em Dosis;
+		letter-spacing: .03125em;
+		
+
 		img {
 			height: 3.4em;
 		}
 
 		li {
 			display: inline-block;
-			text-align: center;
+		}
 
-			color: $yellow;
-			font: .75em Dosis;
-			letter-spacing: .03125em;
+		@media screen and (max-width: 450px) {
+			float: none;
+			margin: 0 auto;
+			padding: 0 0 .2em 0;
+
+			font-size: .95em;
 		}
 	}
 }
@@ -205,6 +261,10 @@ header {
 			$pink-highlight .03em .03em 0,
 			$pink-highlight .04em .04em 0,
 			$pink-highlight .05em .05em 0;
+
+		@media screen and (max-width: 600px) {
+			font-size: 3em;
+		}
 	}
 
 	.style-2 {
@@ -224,6 +284,10 @@ header {
 		color: $yellow;
 		font: 3.6em "Concert One";
 		line-height: .9em;
+
+		@media screen and (max-width: 450px) {
+			font-size: 3em;
+		}
 	}
 
 }
