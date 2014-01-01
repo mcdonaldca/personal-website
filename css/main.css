@@ -5,14 +5,15 @@
 
 html, body {
   height: 100%;
-  background: #ffefc8; }
+  background: #ffefc8;
+  color: #333333; }
 
 a {
   color: inherit;
   text-decoration: none; }
 
 .container {
-  width: 100%;
+  width: 95%;
   max-width: 900px;
   margin: 0 auto; }
 
@@ -35,6 +36,39 @@ a {
   filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#3D2040'); }
   .btn:hover {
     background: #6c728d; }
+
+h1 {
+  text-align: center; }
+
+h2 {
+  color: #333333;
+  font: 2.5em "Concert One";
+  padding: 10px 0; }
+  h2#uni {
+    float: left; }
+  h2#GPA {
+    float: right; }
+  h2 span {
+    font: .5em Dosis; }
+
+.location {
+  float: right;
+  clear: left;
+  margin-top: 1em;
+  width: 8.5em; }
+
+h3 {
+  padding: 10px 0 10px 1em;
+  font: 1.25em Quando; }
+  h3#edu-info {
+    margin-top: 3em;
+    padding-bottom: 0; }
+
+p {
+  font: 1.125em Dosis;
+  letter-spacing: .03125em;
+  padding: 10px 0 10px 2.222em;
+  width: 70%; }
 
 header {
   background: #565b70; }
@@ -65,6 +99,10 @@ header {
   background: #9aba9a; }
 .core .yellow-text {
   color: #ffefc8; }
+.core .green-text {
+  color: #9aba9a; }
+.core .pink-text {
+  color: #ff7562; }
 .core .grey-text {
   color: #333333; }
 .core .purple-text {
@@ -73,12 +111,9 @@ header {
   padding: 10px 0;
   font: 1.25em Quando;
   text-align: center; }
-  .core .sub-text .handwritten {
-    color: #9aba9a;
-    font: 1.15em Handlee; }
-  .core .sub-text .highlight {
-    color: #ff7562; }
-.core .style-1 {
+.core .handwritten {
+  font: 1.15em Handlee; }
+.core .style-1, .core h1 {
   font: 3.4375em Quando;
   letter-spacing: .08em;
   text-shadow: #fc9e84 0.01em 0.01em 0, #fc9e84 0.02em 0.02em 0, #fc9e84 0.03em 0.03em 0, #fc9e84 0.04em 0.04em 0, #fc9e84 0.05em 0.05em 0; }
@@ -97,11 +132,11 @@ header {
   line-height: .9em; }
 
 .footer {
-  height: 2.25em;
+  height: 2.5em;
   background: #565b70;
   text-align: center;
   color: #ffefc8;
-  padding: .25em 0 0 0; }
+  padding: .5em 0 0 0; }
   .footer span {
     display: inline-block;
     margin-left: .2em; }
@@ -113,7 +148,7 @@ header {
   margin: 0 auto -2em; }
 
 .push {
-  height: 2.5em; }
+  height: 2.25em; }
 
 /**
  * For modern browsers
@@ -154,7 +189,7 @@ header {
   font-size: 2em;
   -webkit-font-smoothing: antialiased; }
   .icon:hover {
-    color: #9aba9a;
+    color: #ff7562;
     text-decoration: none; }
 
 .icon-linkedin:before {

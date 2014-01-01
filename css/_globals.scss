@@ -12,6 +12,7 @@
 html, body {
 	height: 100%;
 	background: $yellow;
+	color: $grey;
 }
 
 a {
@@ -20,7 +21,7 @@ a {
 }
 
 .container {
-	width: 100%;
+	width: 95%;
 	max-width: 900px;
 	margin: 0 auto;
 }
@@ -50,8 +51,52 @@ a {
 	}
 }
 
+h1 {
+	@extend .style-1;
+	text-align: center;
+}
 
+h2 {
+	color: $grey;
+	font: 2.5em "Concert One";
+	padding: 10px 0;
 
+	&#uni {
+		float: left;
+	}
+
+	&#GPA {
+		float: right;
+	}
+
+	span {
+		font: .5em Dosis;
+	}
+}
+
+.location {
+	float: right;
+	clear: left;
+	margin-top: 1em;
+	width: 8.5em;
+}
+
+h3 {
+	padding: 10px 0 10px 1em;
+	font: 1.25em Quando;
+
+	&#edu-info {
+		margin-top: 3em;
+		padding-bottom: 0;
+	}
+}
+
+p {
+	font: 1.125em Dosis;
+	letter-spacing: .03125em;
+	padding: 10px 0 10px 2.222em;
+	width: 70%;
+}
 
 
 // ----------------------------------
@@ -119,6 +164,14 @@ header {
 		color: $yellow;
 	}
 
+	.green-text {
+		color: $green;
+	}
+
+	.pink-text {
+		color: $pink;
+	}
+
 	.grey-text {
 		color: $grey;
 	}
@@ -126,19 +179,17 @@ header {
 	.purple-text {
 		color: lighten($purple,10%);
 	}
+
 	.sub-text {
 		padding: 10px 0;
 		font: 1.25em Quando;
 		text-align: center;
 
-		.handwritten {
-			color: $green;
-			font: 1.15em Handlee;
-		}
+		
+	}
 
-		.highlight {
-			color: $pink;
-		}
+	.handwritten {
+			font: 1.15em Handlee;
 	}
 
 	.style-1 {
@@ -183,12 +234,12 @@ header {
 
 
 .footer {
-	height: 2.25em;
+	height: 2.5em;
 	background: $purple;
 	text-align: center;
 	color: $yellow;
 
-	padding: .25em 0 0 0;
+	padding: .5em 0 0 0;
 
 	span {
 		display: inline-block;
@@ -206,7 +257,7 @@ header {
 }
 
 .push {
-	height: 2.5em;
+	height: 2.25em;
 }
 
 
@@ -275,7 +326,7 @@ header {
 	-webkit-font-smoothing: antialiased;
 
 	&:hover {
-		color: $green;
+		color: $pink;
 		text-decoration: none;
 	}
 }
