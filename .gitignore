@@ -1,5 +1,10 @@
+# Ignore files with database information
+
+config.php
+_config.php
+
 # Ignore unnecessary files
 
 .DS_Store
 .sass-cache
-template.html
+template.php

@@ -70,6 +70,10 @@ p {
   padding: 10px 0 10px 2.222em;
   width: 70%; }
 
+.me {
+  float: right;
+  width: 16em; }
+
 header {
   background: #565b70; }
   header .logo {
@@ -112,7 +116,7 @@ header {
   font: 1.25em Quando;
   text-align: center; }
 .core .handwritten {
-  font: 1.15em Handlee; }
+  font: 1.1em Handlee; }
 .core .style-1, .core h1 {
   font: 3.4375em Quando;
   letter-spacing: .08em;
@@ -148,7 +152,7 @@ header {
   margin: 0 auto -2em; }
 
 .push {
-  height: 2.25em; }
+  height: 3em; }
 
 /**
  * For modern browsers
