@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<title>Caitlin McDonald</title>
+ 	<link href='http://fonts.googleapis.com/css?family=Dosis|Concert+One|Quando|Handlee' rel='stylesheet' type='text/css'>
+ 	<link href='css/main.css' rel='stylesheet' type='text/css'>
+ 	<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+ 	<link href='img/favicon.png' rel='icon' type='image/png'>
+ </head>
+
+ <body>
+ 	<div class="wrapper">
+
+ 	<header>
+ 		<div class="container cf">
+ 			<a href="index.html"><img class="logo" src="img/cam.png" alt="CAM logo"></a>
+	 		<ul>
+	 			<li><a href="about.html"><img class="nav-button" src="img/about.png" alt="About icon"></a><br>&nbsp;<span class="hover-hide">about</span></li>
+	 			<li><a href="resume.pdf"><img class="nav-button" src="img/resume.png" alt="Resume icon"></a><br>&nbsp;<span class="hover-hide">resume</span></li>
+	 			<li><a href="education.html"><img class="nav-button" src="img/education.png" alt="Education icon"></a><br>&nbsp;<span class="hover-hide">education</span></li>
+	 			<li><a href="work_exp.html"><img class="nav-button" src="img/work.png" alt="Work icon"></a><br>&nbsp;<span class="hover-hide">work</span></li>
+	 			<li><a href="projects.html"><img class="nav-button" src="img/projects.png" alt="Projects icon"></a><br>&nbsp;<span class="hover-hide">projects</span></li>
+	 		</ul>
+ 		</div>
+ 	</header>
+
+ 	<div class="core">
+ 		<div class="yellow-back">
+	 		<div class="container">
+	 			<div class="sub-text grey-text">Hello, my name is</div>
+	 			<div class="sub-text style-1" id="name">Caitlin A. McDonald</div>
+	 			<div class="sub-text grey-text">and I am a</div>
+	 		</div>
+	 	</div>
+	 	<div class="grey-back">
+	 		<div class="container">
+		 		<div class="sub-text style-2" id="mythical">Deselopreneur</div>
+		 		<div class="sub-text style-3">\&nbsp;&nbsp;di&nbsp;&nbsp;-&nbsp;&nbsp;ze&nbsp;&nbsp;-&nbsp;&nbsp;le&nbsp;&nbsp;-&nbsp;&nbsp;pre&nbsp;&nbsp;-&nbsp;&nbsp;n(y)er&nbsp;&nbsp;\</div>
+		 		<div class="sub-text yellow-text">Which sort of sounds like a <span class="handwritten">mythical creature</span></div>
+		 		<div class="sub-text purple-text">( I like to think it would be a cross between a gazelle and a dinosaur )</div>
+		 	</div>
+	 	</div>
+	 	<div class="green-back">
+	 		<div class="container">
+	 			<div class="sub-text grey-text">But actually it's a</div>
+	 			<div class="sub-text style-4"><span class="highlight">DES</span>IGNER</div>
+	 			<div class="sub-text style-4 plus">+</div>
+	 			<div class="sub-text style-4">DEV<span class="highlight">ELOP</span>ER</div>
+	 			<div class="sub-text style-4">+</div>
+	 			<div class="sub-text style-4">ENTREP<span class="highlight">RENEUR</span></div>
+	 		</div>
+	 	</div>
+	 	<div class="yellow-back">
+	 		<div class="container">
+	 			<a href="projects.html"><div class="btn">SEE WHAT I MEAN</div></a>
+	 		</div>
+	 	</div>
+ 	</div>
+
+ 	<div class="push"></div></div>
+
+ 	<div class="footer">
+ 		<a href="http://www.linkedin.com/in/mcdonaldca"><span class="icon icon-linkedin"></span></a>
+ 		<a href="https://github.com/mcdonaldca"><span class="icon icon-github"></span></a>
+ 		<a href="https://twitter.com/altoanthem"><span class="icon icon-twitter"></span></a>
+ 		<a href="http://dribbble.com/altoanthem"><span class="icon icon-dribbble"></span></a>
+ 	</div>
+
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/jquery.fittext.js"></script>
+	<script>
+		$(".hover-hide").hide();
+		$(".nav-button").mouseenter( function () {
+			$(this).parent().next().next().show();
+		}).mouseleave( function () {
+			$(this).parent().next().next().hide();
+		});
+
+		$("#name").fitText(1.4);
+		$("#mythical").fitText(.7);
+	</script>
+
+ </body>
+
+</html>

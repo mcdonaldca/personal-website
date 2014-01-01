@@ -1,0 +1,173 @@
+/* Style sheet compiled using Sass */
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%;
+  background: #ffefc8; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto; }
+
+.btn {
+  background: #565b70;
+  color: #ffefc8;
+  font: 1.5625em Dosis;
+  letter-spacing: .01em;
+  text-align: center;
+  font-weight: 300;
+  width: 10em;
+  padding: .3em;
+  margin: 20px auto;
+  -moz-box-shadow: 0.175em 0.175em #3d2040;
+  -webkit-box-shadow: 0.175em 0.175em #3d2040;
+  box-shadow: 0.175em 0.175em #3d2040;
+  /* For IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#3D2040')";
+  /* For IE 5.5 - 7 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#3D2040'); }
+  .btn:hover {
+    background: #6c728d; }
+
+header {
+  background: #565b70; }
+  header .logo {
+    height: 3.125em;
+    padding: 1.25em 0;
+    float: left; }
+  header ul {
+    float: right;
+    list-style: none;
+    padding: 1.25em 0 0 0; }
+    header ul img {
+      height: 3.4em; }
+    header ul li {
+      display: inline-block;
+      text-align: center;
+      color: #ffefc8;
+      font: .75em Dosis;
+      letter-spacing: .03125em; }
+
+.core .container {
+  padding: 15px 0; }
+.core .yellow-back {
+  background: #ffefc8; }
+.core .grey-back {
+  background: #333333; }
+.core .green-back {
+  background: #9aba9a; }
+.core .yellow-text {
+  color: #ffefc8; }
+.core .grey-text {
+  color: #333333; }
+.core .purple-text {
+  color: #6c728d; }
+.core .sub-text {
+  padding: 10px 0;
+  font: 1.25em Quando;
+  text-align: center; }
+  .core .sub-text .handwritten {
+    color: #9aba9a;
+    font: 1.15em Handlee; }
+  .core .sub-text .highlight {
+    color: #ff7562; }
+.core .style-1 {
+  font: 3.4375em Quando;
+  letter-spacing: .08em;
+  text-shadow: #fc9e84 0.01em 0.01em 0, #fc9e84 0.02em 0.02em 0, #fc9e84 0.03em 0.03em 0, #fc9e84 0.04em 0.04em 0, #fc9e84 0.05em 0.05em 0; }
+.core .style-2 {
+  padding: 0 0 10px 0;
+  color: #ff7562;
+  font: 3.4375em "Concert One"; }
+.core .style-3 {
+  padding: 0 0 10px 0;
+  color: #ffc6a6;
+  font: 1.25em Dosis;
+  letter-spacing: .09em; }
+.core .style-4 {
+  color: #ffefc8;
+  font: 3.6em "Concert One";
+  line-height: .9em; }
+
+.footer {
+  height: 2.25em;
+  background: #565b70;
+  text-align: center;
+  color: #ffefc8;
+  padding: .25em 0 0 0; }
+  .footer span {
+    display: inline-block;
+    margin-left: .2em; }
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -2em; }
+
+.push {
+  height: 2.5em; }
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../icons/icomoon.eot");
+  src: url("../icons/icomoon.eot?#iefix") format("embedded-opentype"), url("../icons/icomoon.woff") format("woff"), url("../icons/icomoon.ttf") format("truetype"), url("../icons/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.icon {
+  color: #ffefc8;
+  font-family: 'icomoon';
+  font-size: 2em;
+  -webkit-font-smoothing: antialiased; }
+  .icon:hover {
+    color: #9aba9a;
+    text-decoration: none; }
+
+.icon-linkedin:before {
+  content: "\e600"; }
+
+.icon-github:before {
+  content: "\e4ba"; }
+
+.icon-googleplus:before {
+  content: "\e496"; }
+
+.icon-twitter:before {
+  content: "\e49f"; }
+
+.icon-dribbble:before {
+  content: "\e4b1"; }
