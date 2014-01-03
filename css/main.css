@@ -103,6 +103,22 @@ p {
   float: right;
   width: 16em; }
 
+.page-split {
+  display: inline-block;
+  width: 50%; }
+  .page-split img {
+    width: 60%;
+    margin-left: 16%;
+    padding: 4%; }
+  @media screen and (max-width: 600px) {
+    .page-split {
+      display: block;
+      width: 60%;
+      margin: 0 auto; } }
+  @media screen and (max-width: 450px) {
+    .page-split {
+      width: 100%; } }
+
 header {
   background: #565b70;
   width: 100%; }
@@ -175,7 +191,7 @@ header {
   text-shadow: #fc9e84 0.01em 0.01em 0, #fc9e84 0.02em 0.02em 0, #fc9e84 0.03em 0.03em 0, #fc9e84 0.04em 0.04em 0, #fc9e84 0.05em 0.05em 0; }
   @media screen and (max-width: 600px) {
     .core .style-1, .core h1 {
-      font-size: 3em; } }
+      font-size: 2.8em; } }
 .core .style-2 {
   padding: 0 0 10px 0;
   color: #ff7562;
