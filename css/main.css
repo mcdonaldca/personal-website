@@ -119,6 +119,36 @@ p {
     .page-split {
       width: 100%; } }
 
+.project {
+  width: 25%;
+  display: inline-block;
+  margin-top: .5em;
+  margin-bottom: 1em;
+  font: .9em Quando;
+  text-align: center; }
+  .project img {
+    margin-top: 1em;
+    width: 80%;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-webkit-transition: all 0.2s ease-in;
+    -o-webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in; }
+    .project img:hover {
+      margin-top: 0;
+      margin-bottom: 1em; }
+  .project .subtitle {
+    margin-top: .75em; }
+  @media screen and (max-width: 850px) {
+    .project {
+      width: 33%; } }
+  @media screen and (max-width: 600px) {
+    .project {
+      width: 50%;
+      font-size: 1.2em; } }
+  @media screen and (max-width: 400px) {
+    .project {
+      width: 100%; } }
+
 header {
   background: #565b70;
   width: 100%; }

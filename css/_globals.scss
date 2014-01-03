@@ -144,6 +144,16 @@ p {
 	width: 16em;
 }
 
+
+
+
+
+// ----------------------------------
+//
+//			Project Styles
+//
+// ----------------------------------
+
 .page-split {
 	display: inline-block;
 	width: 50%;
@@ -164,6 +174,55 @@ p {
 		width: 100%;
 	}
 }
+
+
+.project {
+	width: 25%;
+	display: inline-block;
+	margin-top: .5em;
+	margin-bottom: 1em;
+
+	font: .9em Quando;
+	text-align: center;
+
+	
+
+	img {
+		margin-top: 1em;
+		width: 80%;
+
+		-webkit-transition: all 0.2s ease-in;
+		-moz-webkit-transition: all 0.2s ease-in;
+		-o-webkit-transition: all 0.2s ease-in;
+		transition: all 0.2s ease-in;
+
+		&:hover {
+			margin-top: 0;
+			margin-bottom: 1em;
+		}
+	}
+
+	.subtitle {
+		margin-top: .75em;
+	}
+
+	@media screen and (max-width: 850px) {
+		width: 33%;
+	}
+
+	@media screen and (max-width: 600px) {
+		width: 50%;
+		font-size: 1.2em;
+	}
+
+	@media screen and (max-width: 400px) {
+		width: 100%;
+	}
+}
+
+
+
+
 
 
 // ----------------------------------
