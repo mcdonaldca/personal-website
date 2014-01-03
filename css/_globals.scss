@@ -53,6 +53,19 @@ a {
 	&:hover {
 		background: lighten($purple, 10%);
 	}
+
+	&.btn-disabled {
+		background: lighten($grey, 20%);
+		color: lighten($grey, 60%);
+
+		-moz-box-shadow: .175em .175em $grey;
+		-webkit-box-shadow: .175em .175em $grey;
+		box-shadow: .175em .175em $grey;
+		/* For IE 8 */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#333333')";
+		/* For IE 5.5 - 7 */
+		filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#333333');
+	}
 }
 
 h1 {
@@ -220,7 +233,13 @@ p {
 	}
 }
 
+.prev {
+	float: left;
+}
 
+.next {
+	float: right;
+}
 
 
 
