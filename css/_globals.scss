@@ -150,6 +150,26 @@ p {
 		width: 100%;
 		padding: 10px 0;
 	}
+
+	&.p-center {
+		margin-left: 15%;
+		padding: 10px 0;
+
+		@media screen and (max-width: 600px) {
+			width: 90%;
+			padding: 10px 5%;
+			margin-left: 0;
+		}
+	}
+	
+
+	a {
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
 }
 
 .me {
@@ -233,12 +253,16 @@ p {
 	}
 }
 
-.prev {
-	float: left;
-}
+.project-highlight {
+	img {
+		width: 70%;
+		padding: 1em 15%;
 
-.next {
-	float: right;
+		@media screen and (max-width: 400px) {
+			width: 90%%;
+			padding: .75em 5%;
+		}
+	}
 }
 
 
