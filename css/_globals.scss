@@ -255,13 +255,23 @@ p {
 
 .project-highlight {
 	img {
-		width: 70%;
-		padding: 1em 15%;
+		width: 100%;
+
+		&.ipad {
+			width: 70%;
+			padding: 0 15%;
+		}
+	}
+
+	.center {
+		max-width: 70%;
+		padding: 10px 0;
 
 		@media screen and (max-width: 400px) {
 			width: 90%%;
-			padding: .75em 5%;
 		}
+
+		margin: 0 auto;
 	}
 }
 
