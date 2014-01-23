@@ -1,5 +1,5 @@
 function adjustNav () {
-	if ( $(window).width() < 660 ) {
+	if ( $(window).width() < 1024 ) {
 		$hoverNav = false;
 		$(".hover-hide").show();
 	} else {
