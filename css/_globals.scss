@@ -303,7 +303,7 @@ p {
 
   .rslides1_tabs {
   	width: 50%;
-  	margin: 0 auto;
+  	margin: 1em auto 0 auto;
   	text-align: center;
 
   	li {
@@ -331,7 +331,6 @@ p {
 			display: inline-block;
 			font: 1.1em Quando;
 			padding: 3px 6px;
-			color: $yellow;
 			margin: .2em .2em .2em .2em;
 		}
 	}
@@ -341,9 +340,7 @@ p {
 
 
 // ----------------------------------
-//
 //			Header Styles
-//
 // ----------------------------------
 
 header {
@@ -507,9 +504,7 @@ header {
 
 
 // ----------------------------------
-//
 //			Footer Styles
-//
 // ----------------------------------
 
 
@@ -545,9 +540,7 @@ header {
 
 
 // ----------------------------------
-//
 //			Clearfix Solution
-//
 // ----------------------------------
 
 /**

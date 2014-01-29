@@ -24,7 +24,7 @@
  		</div>
  	</header>
 
- 	<div class="core">
+ 	<div class="core project-highlight">
  		<div class="yellow-back">
  			<div class="container">
  				<h1>Personal Site</h1>
@@ -32,9 +32,38 @@
  		</div>
  		<div class="grey-back">
  			<div class="container">
-	 			<div class="sub-text green-text handwritten">Project information coming soon.</div>
+	 			<p class="green-text p-center">Website built as a personal portfolio.</p>
+ 				<p class="yellow-text p-center">I built this site to host my portfolio of work, resume, and other related information. I made all the graphics myself using Adobe Illustrator, with a few exceptions. The navigation icons are altered versions of icons from <a href="http://www.icomoon.io">Icomoon.io</a> and the Macbook/iPad/iPhone grahics can be found <a href="http://yourdesignmagazine.com/free-minimal-apple-product-templates">here.</a></p>
+ 				<a href="https://github.com/mcdonaldca/personal-website" target="_blank"><div class="btn">Project on Github</div></a>
+ 				<div class="sub-text pink-text handwritten">December 2013</div>
 	 		</div>
  		</div>
+ 		<div class="yellow-back">
+ 			<div class="container">
+ 				<h2 class="purple-text centered">Skills</h2>
+ 				<div class="skills">
+ 					<div class="skill">HTML</div>
+ 					<div class="skill">CSS</div>
+ 					<div class="skill">Sass</div>
+ 					<div class="skill">Javascript/JQuery</div>
+ 					<div class="skill">FitText.js</div>
+ 					<div class="skill">Adobe Illustrator</div>
+ 					<div class="skill">Adobe Photoshop</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 		<div class="green-back">
+ 			<div class="container">
+ 				<div class="center">
+ 					<ul class="rslides">
+					  <li><img src="../img/projects/personalsite/macbook.gif" alt=""></li>
+					  <li><img src="../img/projects/personalsite/ipad.gif" alt=""></li>
+					  <li><img src="../img/projects/personalsite/iphone.gif" alt=""></li>
+					</ul>
+				</div>
+ 			</div>
+ 		</div>
+	</div>
 	</div>
  	<div class="push"></div></div>
 
@@ -47,6 +76,17 @@
 
 	<script src="../js/jquery.js" type="text/javascript"></script>
 	<script src="../js/nav.js" type="text/javascript"></script>
+	<script src="../js/responsiveslides.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	  $(function() {
+	    $(".rslides").responsiveSlides({
+	    	auto: true,
+	    	speed: 200,
+	    	timeout: 2500,
+	    	pager: true
+	    });
+	  });
+	</script>
 
  </body>
 
