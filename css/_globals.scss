@@ -316,6 +316,10 @@ p {
   		margin: 0 .5em;
   		font: 1em Dosis;
 
+  		&.rslides_here {
+  			background: darken($yellow, 10%);
+  		}
+
   		&:hover {
   			background: darken($yellow, 10%);
   		}
@@ -509,12 +513,14 @@ header {
 
 
 .footer {
-	height: 2.5em;
+	height: 3em;
 	background: $purple;
 	text-align: center;
 	color: $yellow;
 
-	padding: .5em 0 0 0;
+	.icon {
+		margin-top: .25em;
+	}
 
 	span {
 		display: inline-block;
@@ -528,7 +534,7 @@ header {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	margin: 0 auto -2em;
+	margin: 0 auto -3em;
 }
 
 .push {
