@@ -233,6 +233,11 @@ p {
     font: 1.1em Quando;
     padding: 3px 6px;
     margin: .2em .2em .2em .2em; }
+.project-highlight .img-multi {
+  text-align: center; }
+  .project-highlight .img-multi .pixel {
+    padding: 7px;
+    display: inline-block; }
 
 header {
   background: #565b70;
@@ -284,6 +289,8 @@ header {
   background: #333333; }
 .core .green-back {
   background: #9aba9a; }
+.core .white-back {
+  background: white; }
 .core .yellow-text {
   color: #ffefc8; }
 .core .green-text {

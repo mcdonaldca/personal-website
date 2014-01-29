@@ -338,6 +338,15 @@ p {
 			margin: .2em .2em .2em .2em;
 		}
 	}
+
+	.img-multi {
+		text-align: center;
+
+		.pixel {
+			padding: 7px;
+			display: inline-block;
+		}
+	}
 }
 
 
@@ -431,6 +440,10 @@ header {
 
 	.green-back {
 		background: $green;
+	}
+
+	.white-back {
+		background: white;
 	}
 
 	.yellow-text {
