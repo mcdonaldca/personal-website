@@ -1,7 +1,5 @@
 // ----------------------------------
-//
 //			Overarching/General Styles
-//
 // ----------------------------------
 
 * {
@@ -96,6 +94,10 @@ h2 {
 		}
 	}
 
+	&.centered {
+		text-align: center;
+	}
+
 	span {
 		font: .5em Dosis;
 
@@ -182,9 +184,7 @@ p {
 
 
 // ----------------------------------
-//
 //			Project Styles
-//
 // ----------------------------------
 
 .page-split {
@@ -254,24 +254,86 @@ p {
 }
 
 .project-highlight {
-	img {
-		width: 100%;
+	.center {
+		width: 90%;
+		padding: 5%;
+		margin: 0 auto;
 
-		&.ipad {
-			width: 70%;
-			padding: 0 15%;
+		@media screen and (max-width: 600px) {
+			width: 100%;
+			padding: 0;
+		}
+
+		img {
+			width: 100%;
 		}
 	}
 
-	.center {
-		max-width: 70%;
-		padding: 10px 0;
+	.rslides {
+	  position: relative;
+	  list-style: none;
+	  overflow: hidden;
+	  width: 100%;
+	  padding: 0;
+	  margin: 0;
 
-		@media screen and (max-width: 400px) {
-			width: 90%%;
+	  li {
+		  -webkit-backface-visibility: hidden;
+		  position: absolute;
+		  display: none;
+		  width: 100%;
+		  left: 0;
+		  top: 0;
+
+		  &:first-child {
+			  position: relative;
+			  display: block;
+			  float: left;
+		  }
+	  }
+
+	  img {
+		  display: block;
+		  height: auto;
+		  float: left;
+		  width: 100%;
+		  border: 0;
 		}
+  }
 
-		margin: 0 auto;
+  .rslides1_tabs {
+  	width: 50%;
+  	margin: 0 auto;
+  	text-align: center;
+
+  	li {
+  		display: inline-block;
+  		background: $yellow;
+  		width: 1.3em;
+  		height: 1.3em;
+  		border-radius: 50%;
+  		text-align: center;
+  		margin: 0 .5em;
+  		font: 1em Dosis;
+
+  		&:hover {
+  			background: darken($yellow, 10%);
+  		}
+   	}
+  }
+
+	.skills {
+		width: 70%;
+		padding: 0 15%;
+		text-align: center;
+
+		.skill {
+			display: inline-block;
+			font: 1.1em Quando;
+			padding: 3px 6px;
+			color: $yellow;
+			margin: .2em .2em .2em .2em;
+		}
 	}
 }
 
@@ -348,9 +410,7 @@ header {
 
 
 // ----------------------------------
-//
 //			Core Styles
-//
 // ----------------------------------
 
 
@@ -523,9 +583,7 @@ header {
 
 
 // ----------------------------------
-//
 //			Icon fonts
-//
 // ----------------------------------
 
 @font-face {

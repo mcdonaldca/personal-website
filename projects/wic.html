@@ -24,7 +24,7 @@
  		</div>
  	</header>
 
- 	<div class="core">
+ 	<div class="core project-highlight">
  		<div class="yellow-back">
  			<div class="container">
  				<h1>Women in Computing</h1>
@@ -32,8 +32,29 @@
  		</div>
  		<div class="grey-back">
  			<div class="container">
-	 			<div class="sub-text green-text handwritten">Project information coming soon.</div>
+ 				<p class="green-text p-center">Website built for Women in Computing, a student organization at Michigan State University.</p>
+ 				<p class="yellow-text p-center">This was a small, simple project to get a new website up for Women in Computing as they felt they had outgrown their old site. The site was built from scratch using mainly HTML, CSS, and Sass. Original designs were mocked up in Adobe Illustrator. The site also includes Google Calendar integration.</p>
+ 				<a href="https://github.com/mcdonaldca/wic" target="_blank"><div class="btn">Project on Github</div></a>
+ 				<h2 class="green-text centered">Skills</h2>
+ 				<div class="skills">
+ 					<div class="skill">HTML</div>
+ 					<div class="skill">CSS</div>
+ 					<div class="skill">Sass</div>
+ 					<div class="skill">Adobe Illustrator</div>
+ 				</div>
+ 				<div class="sub-text pink-text handwritten">January 2014 (work in progress)</div>
 	 		</div>
+ 		</div>
+ 		<div class="green-back">
+ 			<div class="container">
+ 				<div class="center">
+ 					<ul class="rslides">
+					  <li><img src="../img/projects/wic/macbook.gif" alt=""></li>
+					  <li><img src="../img/projects/wic/ipad.gif" alt=""></li>
+					  <li><img src="../img/projects/wic/iphone.gif" alt=""></li>
+					</ul>
+				</div>
+ 			</div>
  		</div>
 	</div>
  	<div class="push"></div></div>
@@ -47,6 +68,17 @@
 
 	<script src="../js/jquery.js" type="text/javascript"></script>
 	<script src="../js/nav.js" type="text/javascript"></script>
+	<script src="../js/responsiveslides.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	  $(function() {
+	    $(".rslides").responsiveSlides({
+	    	auto: true,
+	    	speed: 200,
+	    	timeout: 2500,
+	    	pager: true
+	    });
+	  });
+	</script>
 
  </body>
 
