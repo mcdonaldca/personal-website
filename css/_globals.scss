@@ -22,6 +22,8 @@ a {
 	text-decoration: none;
 }
 
+
+
 .container {
 	width: 90%;
 	max-width: 900px;
@@ -232,6 +234,13 @@ p {
 		&:hover {
 			margin-top: 0;
 			margin-bottom: 1em;
+		}
+
+		@media screen and (max-width: 1024px) {
+			&:hover {
+				margin-top: 1em;
+				margin-bottom: 0;
+			}
 		}
 	}
 

@@ -13,9 +13,9 @@
 
  	<header>
  		<div class="container cf">
- 			<a href="index.html"><img class="logo" src="img/cam.png" alt="CAM logo"></a>
+ 			<div class="logo"><a href="index.html"><img class="logo-img" src="img/cam.png" alt="CAM logo"></a></div>
 	 		<ul>
-	 			<li><a><img class="nav-button" src="img/about.png" alt="About icon"></a><br>&nbsp;<span class="hover-hide">about</span></li>
+	 			<li><a href="about.html"><img class="nav-button" src="img/about.png" alt="About icon"></a><br>&nbsp;<span class="hover-hide">about</span></li>
 	 			<li><a href="resume.pdf"><img class="nav-button" src="img/resume.png" alt="Resume icon"></a><br>&nbsp;<span class="hover-hide">resume</span></li>
 	 			<li><a href="education.html"><img class="nav-button" src="img/education.png" alt="Education icon"></a><br>&nbsp;<span class="hover-hide">education</span></li>
 	 			<li><a href="work_exp.html"><img class="nav-button" src="img/work.png" alt="Work icon"></a><br>&nbsp;<span class="hover-hide">work</span></li>
@@ -32,19 +32,39 @@
  		</div>
  		<div class="grey-back">
  			<div class="container">
- 				<img class="me" src="img/face.png" alt="A picture of Caitlin McDonald">
-	 			<p class="yellow-text">
-	 				I love <span class="handwritten green-text">the internet</span><br>
-	 				I love <span class="handwritten pink-text">New York City</span><br>
-	 				I love <span class="handwritten green-text">rock climbing</span><br>
-	 				I love <span class="handwritten pink-text">traveling</span><br>
-	 				I love <span class="handwritten green-text">Broadway</span><br>
-	 				I love <span class="handwritten pink-text">coding</span><br>
-	 				I love <span class="handwritten green-text">photography</span><br>
-	 				I love <span class="handwritten pink-text">a cappella</span><br>
-	 				I love <span class="handwritten green-text">color theory</span><br>
+ 				<div class="project">
+ 					<img class="face" src="img/me.png">
+ 				</div>
+ 				<p class="yellow-text p-center">
+ 					Ambitious twenty-nothing who doesn't eat her vegetables. New York City bound. Casual hackathon hacker. Time Magazine's Person of the Year in 2006. Code obsessed.
 	 			</p>
 	 		</div>
+ 		</div>
+ 		<div class="green-back">
+ 			<div class="container">
+ 				<p class="gray-text p-center">
+ 					I don't really like writing about myself, but here are some things I do like:<br><br>
+ 					<span class="handwritten yellow-text">the internet</span>
+ 					<span class="handwritten">New York City</span>
+ 					<span class="handwritten yellow-text">rock climbing</span>
+ 					<span class="handwritten">traveling</span>
+ 					<span class="handwritten yellow-text">hackathons</span>
+ 					<span class="handwritten">Seattle</span>
+ 					<span class="handwritten yellow-text">pugs</span>
+ 					<span class="handwritten">coding</span>
+ 					<span class="handwritten yellow-text">beatboxing</span>
+ 					<span class="handwritten">a cappella</span>
+ 					<span class="handwritten yellow-text">color theory</span>
+ 					<span class="handwritten">puzzles</span>
+ 					<span class="handwritten yellow-text">.5mm pencil lead</span>
+	 			</p>
+	 		</div>
+ 		</div>
+ 		<div class="yellow-back">
+ 			<div class="container">
+ 				<h2 class="purple-text">Travel History</h2>
+ 				<img src="img/travel_US.png" alt="Map of visited US States" style="width:80%;margin-left:10%;">
+ 			</div>
  		</div>
  	</div>
 
@@ -53,18 +73,11 @@
  	<div class="footer">
  		<a href="http://www.linkedin.com/in/mcdonaldca"><span class="icon icon-linkedin"></span></a>
  		<a href="https://github.com/mcdonaldca"><span class="icon icon-github"></span></a>
- 		<a href="http://dribbble.com/altoanthem"><span class="icon icon-dribbble"></span></a>
+ 		<a href="http://www.twitter.com/altoanthem"><span class="icon icon-twitter"></span></a>
  	</div>
 
 	<script src="js/jquery.js" type="text/javascript"></script>
-	<script>
-		$(".hover-hide").hide();
-		$(".nav-button").mouseenter( function () {
-			$(this).parent().next().next().show();
-		}).mouseleave( function () {
-			$(this).parent().next().next().hide();
-		});
-	</script>
+	<script src="js/nav.js" type="text/javascript"></script>
 
  </body>
 

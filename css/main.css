@@ -160,6 +160,10 @@ p {
     .project img:hover {
       margin-top: 0;
       margin-bottom: 1em; }
+    @media screen and (max-width: 1024px) {
+      .project img:hover {
+        margin-top: 1em;
+        margin-bottom: 0; } }
   .project .subtitle {
     margin-top: .75em; }
   @media screen and (max-width: 850px) {
